@@ -1,0 +1,508 @@
+/* --------DEFAULT SETUP---------- */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /* hiển thị chữ lên web cách tốt nhất */
+    /* mặc định là của font-size là 16px nếu mình ko xét */
+    overflow-x: hidden ;
+    scroll-behavior: smooth;
+}
+
+/* --- fix lỗi nút menu dropdown Sneaker-Sandal ----  */
+.click {
+    border: none;
+    width: 100%;
+    text-align: left;
+    background: white;
+}
+
+.click a {
+    text-decoration: none !important;
+
+}
+
+/* di chuyển phần infor lên  */
+.container-fluid {
+    /* transform: translate(0, -7.5%); */
+    margin-top: -35px;
+}
+
+
+.buy-product {
+    transform: translate(2.4%, 0);
+}
+
+
+.prd-detail {
+    max-width: 1200px;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row-buy {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.prd-detail .breadcrumb {
+    background: transparent;
+    border-bottom: #000 3px solid;
+    border-radius: 0px;
+    padding: 8px 15px 8px 0px;
+    font-size: 20px;
+}
+
+.breadcrumb {
+    list-style: none;
+}
+
+.prd-detail .breadcrumb li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#carouselExampleIndicators {
+    margin-left: 15px;
+}
+
+.buy-product h4 {
+    font-size: 27px;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+
+.buy-product h5 {
+    font-size: 17px;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.price {
+    color: #0066cc;
+    font-size: 24px;
+    padding-top: 22px;
+    font-weight: bold;
+}
+
+.divider {
+    word-spacing: 1px; 
+    padding-top: 15px;
+}
+
+.infor {
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+
+
+
+
+/*------- Chọn list ảnh  ----------------*/
+img {
+    vertical-align: middle;
+  }
+    
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* 2 nút qua chuyển ảnh qua trái-phải*/
+  .click-prev,
+  .click-next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -25px;
+    /* di chuyển 2 nút xuống dưới  */
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    text-decoration: none !important;
+    /* xóa gạch chân thẻ a  */
+  }
+  
+  /* Position the "next button" to the right */
+  .click-next {
+    max-width: 42.65px;
+    margin-left: 547px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .click-prev:hover,
+  .click-next:hover {
+      background-color: #000;
+      color: white;
+  }
+
+  
+  /* dòng ngăn cách giữa ảnh to với các ảnh nhỏ dưới */
+  .caption-container {
+    text-align: center;
+    background-color: white;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Các ảnh nhỏ dưới slide */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 3px;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  .mySlides {
+      margin-top: 18px;
+  }
+
+
+
+
+
+/* ---------- CHỌN SIZE ------------  */
+  .size label {
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0066cc;
+  }
+
+  .select-box {
+      position: relative; 
+      display: flex;
+      cursor: pointer;
+  }
+  .custom-select__wrapper {
+      width: 100%;
+      position: relative;
+  }
+
+  .wrapper_list{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: auto; */
+    width: 228.5px;
+    background-color: #fff;
+    display: none;
+    margin-top: 40px;
+    /* khoảng cách với chữ chọn size */ 
+    background-color: white;
+    z-index: 1; 
+  }
+
+  .select-box.open .wrapper_list{
+      display: grid;
+  }
+  
+
+  /* từng ô số size  */
+  .wrapper_item{
+      height: 57px;
+      width: 57px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 16px 0;
+  }
+
+  .wrapper_item:hover {
+      background-color: #0080ff;
+      color: white;
+  }
+
+
+  .wrapper_item {
+      border: 1px solid black;
+      cursor: pointer;
+      /* để click được */
+  }
+
+
+.select-box__item {
+    width: 220px;
+    height: 37px;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px 0;
+    font-size: 20px;
+}
+
+.down_black {
+    width: 20px;
+    height: 25px;
+    transform: translate(-145%, 21%);
+}
+
+
+
+/* ---- CHỌN SỐ LƯỢNG ------  */
+.size {
+    float: left;
+}
+
+.amount {
+    float: left;
+    margin-left: 30px;
+}
+/* nằm thành hàng ngang với nhau  */
+
+#click-amount {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding-left: 97px;
+}
+/* xóa dấu mũi tên xuống của thẻ Select  */
+
+.amount label {
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0066cc;    
+}
+
+.add-cart a{
+    background-color: #000;
+    width: 73%;
+    float: left;
+    height: 73px;
+    color: #fff;
+    font-size: 23px;
+    padding: 20px 0px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 22px;
+}
+
+/* ---------NÚT THẢ TIM---------  */
+#heart {
+    background-color: #000;
+    width: 15%;
+    float: left;
+    height: 73px;
+    color: #fff;
+    margin-top: 22px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+.fa-heart{
+    padding-top: 5px;
+}
+.fa-heart:hover {
+    transform: scale(1.7);
+}
+
+/*--- ĐỔI MÀU nút tym  ----*/
+.active-heart {
+    color: #3399ff;
+}
+.inactive {
+    color: #fff;
+}
+
+/* Thanh toán  */
+#pay {
+    background-color: #0073e6;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 23px;
+    padding: 20px 0px;
+    display: block;
+    width: 91.8%;
+    margin-top: 20px;
+}
+
+/*--- THU GỌN : THÔNG TIN SẢN PHẨM  ---*/
+.collapsible {
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    margin-top: 35px;
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+  
+  /* Phần nội dung ở dưới chữ  */
+  .content {
+    display: none;
+    overflow: hidden;
+  }
+
+  .content-down {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+
+  .divider-2 {
+    word-spacing: 1px; 
+    padding-top: 20px;
+    font-size: 14px;
+  }
+
+  .collapsible:hover, .collapsible:active {
+    color: #0066cc;
+  }
+
+
+/* ----- SẢN PHẨM LIÊN QUAN -----------  */
+hr{
+  margin-top: 0px;
+}
+
+#label-slider{
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: 28px;
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
+#label-slider::after{
+  content: " ";
+  /* hiển thị cái gì đó bên dưới chữ  */
+  display: block;
+  width: 200px;
+  height: 3px;
+  background-color: #0080ff;
+  margin: 0 auto;
+  /* căn giữa đường kẻ  */
+  margin-top: 5px;
+  /* cách kẻ với chữ  */ 
+}
+
+
+.virtual-container-child {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1200px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 40px;
+
+  }
+
+  .virtual-container-child  .virtual-wrap-slide {
+    width: 210%;
+    display: flex;
+  }
+
+  .virtual-container-child .virtual-wrap-slide .virtual-slide {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+   
+  .shose img {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+
+  .shose img:hover {
+    border: 2px solid #83c3fb ;
+  }
+
+  .shose a {
+    text-decoration: none !important;
+    color: black;
+  }
+
+  .shose a:hover {
+    color: #0059b3;
+  }
+
+  .shose p {
+    font-weight: normal;
+    margin-top: 5px;
+  }
+
+
+  .virtual-container-child #virtual-next,
+  #virtual-prev {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 27%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+  }
+
+  .virtual-container-child #virtual-next {
+    right: 0;
+  }
+
+  .virtual-container-child #virtual-prev {
+    left: 0;
+  }
+
+  
+
+  

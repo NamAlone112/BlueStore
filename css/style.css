@@ -1,0 +1,1218 @@
+/* --------DEFAULT SETUP---------- */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /* hiển thị chữ lên web cách tốt nhất */
+    /* mặc định là của font-size là 16px nếu mình ko xét */
+    overflow-x: hidden ;
+} 
+
+/* --------------HEADER --------------------- */
+/* -----------Header 1------------------- */
+
+.header1{
+    margin-bottom: 0x;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    /* loại bỏ các dấu chấm ở 3 mục lựachọn  */
+    padding-right: 30px;
+    background: #303030;
+    text-align: right;
+    height: 34px;
+    width: 100%;
+    /* độ rộng/dày của dãy đen */
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    /* cho 3 mục xếp thành 1 hàng ngang  */
+    margin-right: 40px;
+    /* tạo khoảng cách giữa các mục là 30px  */
+    font-size: 1.1em;
+}
+
+/* chữ đăng nhập màu trắng  */
+#myBtn1, #myBtn2{
+    color: white;
+}
+#myBtn1:hover, #myBtn2:hover {
+    color: #4da6ff;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    /* loại bỏ dấu gạch chân phía dưới 3 mục lựa chọn  */
+    color: white;
+    font-weight: 400;
+    /* thay đổi màu chữ, size chữ...  */
+    transition: border-bottom 1s;
+    /* chỉnh đồ trể khi chuyển cảnh trong css, ở đây chỉnh độ trể của dấu gạch chân đi 2s  */
+    padding: 1px 0;
+    /* khoảng cách giữa dấu gạch ngang và chữ */
+    position: relative;
+    top: 7px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    color: #4da6ff;
+}
+
+/* -----------------ROW (bộ 3 combobox) ---------------------- */
+.row{
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 0;
+    float: left;
+}
+
+header .navbar{
+    margin-bottom: 0px;
+    margin-top: 0px;
+   
+}
+
+.logo{
+    display: block;
+    margin-top: 0px;
+    transform: translate(52%, -21.5%);
+}
+
+#dropdownMenuLink {
+    background-color: white;
+    border: none;
+    font-size: 1.6em;
+    color: #000;
+    font-weight: bold;
+    box-shadow: none;
+    transform: translateZ(0);
+    /* hiệu ứng hover mượt hơn  */
+}
+
+.dropdown{
+    float: none;
+    display: inline-block;
+    margin-right: 35px;
+    /* khoảng cách giữ 3 combobox */
+}
+
+
+/*-- chỉnh index để combobox không bị đè dưới thanh cuộn chữ */
+.menu-3{
+    z-index: 1;
+}
+.under-row{
+    z-index: 1;
+}
+/* đưa input tìm kiếm lên để ko bị đè  */
+.search-box{
+    z-index: 2;
+}
+
+
+/* toàn bộ 3 combobox */
+.menu-3{
+    width: 100%;
+    float: left;
+    position: absolute;
+	left: 79%;
+	top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.dropdown-menu li a{
+    font-size: 1.3em;   
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:active {
+    background-color: #b3d9ff;
+}
+
+#dropdownMenuLink:hover,
+#dropdownMenuLink:active {
+    color: #0066cc;
+}
+
+
+/* ----------Nút tìm kiếm------------------ */
+.search-box input{
+    font-size: 1.2em;
+    height: 40px;
+    width: 280px;
+    border-radius: 10px;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 2px solid #99ccff;
+    padding-left: 40px;
+    float: right;
+    transform: translate(-25%, -110%);
+}
+
+#icon-search{
+    transform: translate(-290%, -240%);
+}
+
+/* ----------Thanh cuộn chữ------------- */
+.under-row{
+    width: 100%;
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    height: 42px;
+    background-color: #8c8c8c;
+    display: block; 
+    text-align: center;
+    color: #0059b3;
+    padding-top: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.23em;
+    font-weight: 600;
+    font-style: italic;
+    word-spacing: 3px;
+    box-shadow: 0;
+    background-color: #f1f1f1;
+    transform: translate(0, -180%);
+}
+.carousel-inner{
+    width: 100%;
+}
+
+#next-left {
+    transform: translate(500%, -20%);
+
+}
+#next-right {
+    transform: translate(-500%, -20%);
+}
+
+.container:hover .glyphicon-chevron-left{
+    opacity: 0;
+}
+
+/* ngăn Carousel đè lên row */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* -----------thanh cuộn ảnh--------------- */
+.section1{
+    transform: translate(0, -9.2%);
+    /* transition: all 0.1s; */
+}
+
+
+/* ------------Section 2(Danh mục mua hàng)------------ */
+.row-buy{
+    margin-left: 55px;
+    max-width: 1200px;
+    /* căn chỉnh 3 ảnh ở giữa  */
+    margin: 0 auto;
+}
+
+.label-buy{
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;    
+    font-weight: bold;
+}
+
+.label-buy::after{
+    content: " ";
+    /* hiển thị cái gì đó bên dưới chữ  */
+    display: block;
+    width: 170px;
+    height: 3px;
+    background-color: #0080ff;
+    margin: 0 auto;
+    /* căn giữa đường kẻ  */
+    margin-top: 5px;
+    /* cách kẻ với chữ  */ 
+}
+
+.about-piture img {
+    width: 95%;
+    border-radius: 20px;
+    border: 3px solid #c2e1fd;
+    box-shadow: 0px 5px 5px 5px#c2e1fd;
+    transition: all 0.5s;
+}
+
+.picture-title{
+    text-align: center;
+    /* kĩ thuật căn giữa chữ  */
+    color:  #9ccffc;
+    transform: translate(-1%,10%);
+    /* di chuyển các chữ  */
+    opacity: 0;
+    /* độ mờ chữ  */
+    transition: all 0.5s;
+    font-size: 27px;
+    font-weight: bold;
+    transform: translateZ(0);
+}
+
+.about-piture:hover img,
+.about-piture:active img{
+    filter: brightness(55%) blur(2px);
+    /* blur làm mờ bức ảnh  */
+    /* brightness làm tăng giảm độ sáng bức ảnh  */
+    
+}
+
+.about-piture:hover .picture-title,
+.about-piture:active .picture-title{
+    transform: translate(-1%,-380%);
+    opacity: 5;
+    /* di chuyển chuột đến thì chữ hiện lên  */
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+/* ------------Section 3(BEST SALE)------------ */
+.row-buy-2, .row-buy-3{
+    margin-left: 55px;
+    max-width: 1300px;
+    /* căn chỉnh 3 ảnh ở giữa  */
+    margin: 0 auto;
+}
+
+/* chữ label SAN PHAM NOI BAT  */
+.best-sale{
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;    
+    font-weight: bold;
+}
+
+#label-bestsale::after{
+    content: " ";
+    /* hiển thị cái gì đó bên dưới chữ  */
+    display: block;
+    width: 170px;
+    height: 3px;
+    background-color: #0080ff;
+    margin: 0 auto;
+    /* căn giữa đường kẻ  */
+    margin-top: 5px;
+    /* cách kẻ với chữ  */ 
+}
+
+.best-sale img {
+    width: 90%;
+    border-radius: 20px;
+    transition: all 0.5s;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.best-sale a{
+    text-decoration: none;
+    /* xóa gạch chân thẻ a */
+}
+
+.name-shoes{
+    font-size: 19px;
+    color: black;
+    padding-top: 20px;
+    transition: all 0.3s;
+    /* độ trể đổi màu  */
+}
+.giatien{
+    font-size: 17px;
+    padding-top: 0;
+}
+
+.name-shoes:hover,
+.name-shoes:active {
+    color: #0059b3;
+}
+
+.best-sale img:hover,
+.best-sale img:active {
+    transform: scale(1.1);
+    /* phóng to lên  */
+    border: 2px solid #c2e1fd;
+}
+
+/* ------------------FOOTER------------------------- */
+/* ------------------------------------------------ */
+footer{
+
+    background-color: #4c4c4c;
+    padding: 60px 0px 60px 0px;
+    overflow: hidden;
+    height: 500px;
+    /* độ cao của footer  */
+}
+.footer-container{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about-footer{
+    z-index: 1;
+}
+
+/* ---logo--- */
+.about-footer img{
+    display: block;
+    width: 320px; 
+    margin-top: -85px; 
+    margin-left: 20px;
+}
+
+.about-footer p{
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 9px;
+    line-height: 1.6em;
+    float: left;
+    padding-left: 55px;
+}
+
+.col.span-1-of-4{
+    text-align: center;
+}
+
+.list-about{
+    text-align: left;
+    padding-left: 58px;
+    font-size: 17px;
+    line-height: 2;
+    /* khoảng cách các chữ chiều dọc  */
+    list-style: none;
+    /* xóa dấu chấm đầu li  */
+}
+.list-about a {
+    color: #cccccc;
+    text-decoration: none;
+    /* xóa gạch chân */
+    transition: all 0.3s;
+
+}
+
+.list-about a:hover,
+.list-about a:active{
+    color: #1a8cff;
+}
+
+
+
+/* --nút Tìm cửa hàng-- */
+.search-store{
+    display: block;
+    font-size: 19px;
+    padding-top: 7.5px;
+    margin-left: 39px;
+    margin-top: -15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3399ff;
+    color: #fff;
+    font-weight: 600;
+    width: 279px;
+    height: 40px;
+    transition: all 0.5s;
+}
+.search-store:hover{
+    background-color: #fff;
+    color: #3399ff;
+}
+
+/* -- social (các icon facebook)--  */
+.social{
+    display: block;
+    height: 70px;
+    text-align: center;
+    transform: translate(0%, -80%);
+    margin-top: 40px;
+}
+
+/* ---màu các icon---- */
+.fa-facebook {
+    color: #fff;
+    transition: all 0.5s;
+}
+.fa-twitter {
+    color: #fff;
+    transition: all 0.5s;	
+}
+.fa-google-plus-g {
+    color: #fff;
+    transition: all 0.5s;
+}
+.fa-instagram {
+    color: #fff;
+    transition: all 0.5s;
+}
+.fa-youtube {
+    color: #fff;
+    transition: all 0.5s;
+}
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+}
+
+.fa-facebook:hover{
+    color: #1a8cff;
+}
+.fa-twitter:hover {
+	color: #80bfff;	
+}
+.fa-google-plus-g:hover {
+	color: #e16151;
+}
+.fa-instagram:hover {
+	color: #d580ff;
+}
+.fa-youtube:hover {
+	color:#ff1a1a;
+}
+
+
+/* dòng chữ Copyright... */
+.copyright{
+    color: #808080;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 0;
+}
+
+
+/* social bên cạnh phải  */
+.social-right{
+    position: fixed;
+    right: 0px;
+    top: 330px;
+    width: 40px;
+    background-color: #666;
+    padding: 8px;
+    z-index: 9999;
+}
+.social-right a{
+    display: block;
+    text-align: center;
+    line-height: 2.3;
+    /* khoảng cách các chữ chiều dọc  */
+}
+
+.cartfixed {
+    position: fixed;
+    right: 0px;
+    top: 240px;
+    width: 40px;
+    height: 75px;
+    background-color: #1a8cff;
+    padding: 10px 2px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+
+/* -----Nút go to top -------- */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 17px;
+    width: 7%;
+}
+
+
+
+
+/* ------------------------------------------------ */
+/* ------ FOMR DANG NHAP LOGIN ---------------- */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+  
+  /* The Close Button */
+  .close, .close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus,
+  .close2:hover,
+  .close2:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* form đăng nhập  */
+  .form {
+      width: 360px;
+      min-height: 100px;
+      padding: 25px 24px;
+      text-align: center;
+      background: #f1f1f1;
+      border-radius: 10px;
+      align-self: center;
+      box-shadow: 1px 3px 7px 0 rgba(51,62,73,.1);
+      border: 4px solid #9ccffc;
+      position: absolute;
+      left: 50%;
+      margin-left: -210px;
+      margin-top: 90px;
+  }
+
+  #form-1 {
+      margin-top: 35px;
+  }
+ 
+  /* hiệu ứng border chạy vòng tròn  */
+  .form::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: #03A9F4;
+    top: 0;
+    left: 0;
+    transition: all 2s;
+}
+.form:hover:before {
+    width: 100%;
+}
+
+.form:hover span::after {
+    transition: all 2s 6s;
+    top: 0;
+    height: 2px;
+}
+.form span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #03A9F4;
+}
+
+/* chữ phỉa dưới Đăng Nhập  */
+  .form .desc {
+      text-align: center;
+      color: #636d77;
+      font-size: 0.85rem;
+      font-weight: lighter;
+      margin-top: 16px;
+      font-weight: 300;
+      margin-bottom: 20px;
+  }
+  
+  .form-group {
+      display: flex;
+      margin-bottom: 16px;
+      flex-direction: column;
+  }
+  
+  .form-label,
+  .form-message {
+      text-align: left;
+  }
+  
+  .form-label {
+      font-weight: 700;
+      line-height: 1.5rem;
+      font-size: 0.9rem;
+  }
+  
+  .form-control {
+      height: 40px;
+      padding: 8px 12px;
+      border: 1px solid #b3b3b3;
+      border-radius: 3px;
+      outline: none;
+  }
+  
+  .form-control:hover {
+      border-color: #3399ff;
+  }
+  
+  .form-group.invalid .form-control {
+      border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+      color: #f33a58;
+  }
+  
+  .form-message {
+      line-height: 1.6rem;
+      padding: 4px 0 0;
+  }
+  
+  .form-submit {
+      outline: none;
+      background-color: #3399ff;
+      margin-top: 12px;
+      padding: 12px 16px;
+      font-weight: 520;
+      color: #fff;
+      border: none;
+      width: 100%;
+      font-size: 17px;
+      border-radius: 8px;
+      cursor: pointer;
+  }
+  
+  .form-submit:hover {
+      background-color: #0073e6;
+  }
+
+
+/* chữ ĐĂNG NHẬP  */
+  h3{
+      color: #0073e6;
+      font-size: 30px;
+  }
+  
+  .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+    
+  .chuacotaikhoan{
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      font-style: italic;
+  }
+
+  .main {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+
+
+  
+/* ------------ CHAT BOX --------------  */
+#center-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* ----------- CHATBOT STYLE--------- */
+.chat-circle_robot {
+    display: block;
+    transform: translate(-20%,-20%);
+}
+.chat-box-overlay_robot {
+    margin-left: -3px;
+    margin-top: -4px;
+}
+.chat-box-welcome_robot {
+    margin-left: -10px;
+}
+
+/* ---------- GENERAL STYLE---------- */
+
+.chat-box-welcome__company-name,
+.chat-box__sign {
+    font-family: 'Roboto', 'Helvetica Neue', "Arial", sans-serif;
+    position: relative;
+}
+
+
+/*powered by deeppixel*/
+
+.chat-box__sign {
+    font-size: 9px;
+    line-height: 20px;
+    /*color: #a2a2a2;*/
+    color: #b5b5b5;
+}
+
+.chat-input-box {
+    text-align: center;
+    position: relative;
+}
+
+.btn#my-btn {
+    background: white;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    border-radius: 45px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #5865C3;
+}
+
+
+/*color to change*/
+
+
+.chat-box-welcome__header,
+.chat-box-header,
+.chat-msg.bot>.msg-avatar {
+    /*red*/
+    /*background-image: linear-gradient( to top right, rgba(246, 72, 72, 1), rgba(250, 65, 95, 1));*/
+    /*pink-blue*/
+    /*background-image: linear-gradient( to top left, rgba(252, 123, 123, 1), rgba(166, 193, 255, 1));*/
+    /*pink-red*/
+    background-image: linear-gradient( to bottom right, rgba(168,	224,	99, 1), rgb(0, 128, 255));
+}
+
+.options-btn {
+    border: 1px solid rgba(246, 72, 72, 1);
+}
+.spiner > *  {
+    background: rgba(246, 72, 72, 1);
+}
+
+/*.options-btn:hover{
+   background-image: linear-gradient( to bottom right, rgba(240, 149, 255, 1), rgba(246, 72, 72, 1));
+    
+    color: white;
+}*/
+
+/* ---------- chat-bot-button to open chat---------- */
+
+#chat-circle {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+   
+}
+
+
+
+#chat-overlay {
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: none;
+}
+
+.chat-circle_robot {
+    height: 50px;
+}
+
+
+/*chat-bot-welcome*/
+
+.chat-box-welcome {
+    /*add display none*/
+    /* display: none;*/
+    /*background: #efefef;*/
+    background: #f8f8f8;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    width: 350px;
+    max-width: 85vw;
+    max-height: 100vh;
+    border-radius: 3px;
+    box-shadow: 0px 5px 35px 9px #ccc;
+}
+
+
+.chat-box-welcome__header {
+    height: 420px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: none;
+}
+
+.chat-box__header-text {
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-top: 13px;
+}
+
+#chat-box-welcome__ava {
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    left: 125px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
+    padding: 22px;
+}
+
+.chat-box-welcome_robot {
+  transform: translate(2%,2%);
+}
+
+
+/*#chat-box-welcome__ava .material-icons {
+    font-size: 64px;
+}*/
+
+.chat-box-welcome_robot {
+    height: 75px;
+    position: absolute;
+    top: 12px;
+}
+
+.chat-box-welcome__welcome-text {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.chat-box-welcome__welcome-text p {
+    font-size: 24px;
+}
+
+
+/*chat-box after welcome was togled*/
+
+#chat-box__wraper {
+    display: none;
+}
+
+.chat-box {
+    /*add display none*/
+    display: none;
+    /*background: #efefef;*/
+    background: #f8f8f8;
+    position: fixed;
+    /* right: 30px;*/
+    right: 30px;
+    bottom: 50px;
+    width: 350px;
+    max-width: 85vw;
+    max-height: 100vh;
+    border-radius: 3px;
+    /*   box-shadow: 0px 5px 35px 9px #464a92; */
+    box-shadow: 0px 5px 10px 5px #ccc;
+    z-index: 9999;
+}
+
+.chat-box-toggle {
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.chat-box-header {
+    position: relative;
+    height: 50px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-top: 13px;
+}
+
+.chat-box-body {
+    position: relative;
+    height: 370px;
+    height: auto;
+    border-bottom: 1px solid rgba(181, 181, 181, 0.42);
+    overflow: hidden;
+}
+
+.chat-box-body:after {
+    content: "";
+    background-color: #F8F8F8;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.chat-input__text {
+    background: #fff;
+    width: 95%;
+    position: relative;
+    height: 47px;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    margin-top: 5px;
+    resize: none;
+    outline: none;
+    border: 1px solid #F2F0F0;
+    color: #888;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.chat-input-box>form {
+    margin-bottom: 0;
+}
+
+.chat-input__text::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+.chat-input__text::-moz-placeholder {
+    color: #ccc;
+}
+
+.chat-input__text:-ms-input-placeholder {
+    color: #ccc;
+}
+
+.chat-input__text:-moz-placeholder {
+    color: #ccc;
+}
+
+.chat-submit {
+    position: absolute;
+    bottom: 27px;
+    right: 10px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 50%;
+    color: #3399ff;
+    width: 35px;
+    height: 35px;
+}
+
+.chat-logs {
+    padding: 15px;
+    height: 370px;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 500px) {
+    .chat-logs {
+        height: 40vh;
+    }
+}
+
+.chat-msg.bot>.msg-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    float: left;
+    width: 15%;
+    padding: 9px;
+    position: relative;
+}
+
+
+
+
+.chat-box-overlay_robot {
+    height: 35px;
+    
+}
+
+
+
+
+.cm-msg-text {
+    background: white;
+    padding: 10px 15px 10px 15px;
+    color: #666;
+    max-width: 75%;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.options-btn {
+    background: white;
+    padding: 10px 15px 10px 15px;
+    color: #666;
+    width: 75%;
+    margin-left: 55px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+.chat-msg {
+    clear: both;
+}
+
+.chat-msg.self>.cm-msg-text {
+    float: right;
+    background: #efefef;
+    /*color: white;*/
+}
+
+.cm-msg-button>ul>li {
+    list-style: none;
+    float: left;
+    width: 50%;
+}
+
+.cm-msg-button {
+    clear: both;
+    margin-bottom: 70px;
+}
+
+
+/*loader*/
+
+
+.spin-container {
+       /* padding: 0px 15px 0px 15px; */
+    color: #666;
+    max-width: 75%;
+    /* float: left; */
+    bottom: 4px;
+    left: 50%;
+    /* margin-left: 45%; */
+    position: absolute;
+    /* margin-bottom: 20px; */
+    display: none;
+}
+
+.spiner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -20px;
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  width: 40px;
+}
+.spiner > * {
+  position: absolute;
+  top: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+ /* background: #0074e4;*/
+  opacity: 0.6;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.spiner > *:nth-child(1) {
+  left: 0;
+  -webkit-animation: mymove 1.3s infinite ease-in;
+  animation: mymove 1.3s infinite ease-in;
+}
+.spiner > *:nth-child(2) {
+  left: 12px;
+  -webkit-animation: mymove 1.3s 0.3s infinite ease-in;
+  animation: mymove 1.3s 0.3s infinite ease-in;
+}
+.spiner > *:nth-child(3) {
+  left: 24px;
+  -webkit-animation: mymove 1.3s 0.6s infinite ease-in;
+  animation: mymove 1.3s 0.6s infinite ease-in;
+}
+
+@-webkit-keyframes mymove {
+  0%,
+  100%,
+  80% {
+    opacity: 0.6;
+    -webkit-transform: scale(0.4);
+  }
+  40% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes mymove {
+  0%,
+  100%,
+  80% {
+    opacity: 0.6;
+    transform: scale(0.4);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

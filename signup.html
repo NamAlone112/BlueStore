@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- --------- Hiệu ứng load trang -------------  -->
+    <style>
+        #status {
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            left: 50%;
+            z-index: 100;
+            top: 50%;
+            background-image: url('image/loadtrang.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: -100px 0 0 -100px;
+            z-index: 1001;            
+        }
+    
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FFF;
+            z-index: 1000;
+        }
+    </style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueStore - Login</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+        href="/redirect?Id=HhwCEYIrCJMyzQaOUKiwNn9%2fWCbkaR3O32XUy4zYquBiLHBEihYvtMuNlHWJcI13DJaARJd53%2bUZSjsGlpwlkA%3d%3d"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
+    <!--chèn link 3 loại font chữ vào-->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <!-- link để liên kết thêm các ICON  -->
+    <link rel="shortcut icon" type="image/png" href="logo/logo-small.png">
+    <!-- icon đầu trang web  -->
+
+    <!-- bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="css/login.css">
+    <script src="JavaScript/login.js"></script>
+</head>
+
+<!-- --------- Hiệu ứng load trang -------------  -->
+<script>
+    $(window).bind("load", function() {
+        jQuery("#status").fadeOut();
+        jQuery("#loader").fadeOut();
+    });
+</script>
+
+<body>  
+    <!-- --------- Hiệu ứng load trang -------------  -->
+    <div id='status'></div>
+    <div id='loader'></div>
+    
+    <header>
+        <div class="header1">
+            <ul class="main-nav">
+                <li><a href="#"><i style="margin-right: 8px;" class="fas fa-map-marker-alt"></i>Tra cứu cửa hàng</a>
+                </li>
+                <li><a href="#"><i style="margin-right: 8px;" class="fas fa-shopping-cart"></i>Giỏ hàng</a></li>
+                <li><a href="login.html"><i style="padding-right: 8px;" class="fas fa-user"></i>Đăng nhập</a></li>
+                <li><a href="#"><i style="padding-right: 8px;" class="fas fa-user-plus"></i>Đăng ký</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <a href="index.html" class="Logo"><img style="width: 15%;" class="logo" src="image/logo.png"
+                alt="photo"></a>
+
+    <div class="clearfix"></div>
+
+    <div class="main">
+        <div class="form-all">
+            <form action="" method="POST" class="form" id="form-1">
+                <h3 class="heading">Đăng ký thành viên</h3>
+                <p style="font-style: italic;" class="desc">Hãy trở thành Thành viên của BlueStore để nhận nhiều ưu đãi 💙</p>
+    
+                <div class="spacer"></div>
+    
+                <div class="form-group">
+                    <label for="fullname" class="form-label">Tên đầy đủ</label>
+                    <input id="fullname" name="fullname" type="text" placeholder="VD: Blue Store" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" type="text" placeholder="VD: blue@gmail.com" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                    <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu"
+                        type="password" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+    
+                <button class="form-submit">Đăng ký</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mong muốn của chúng ta
+            Validator({
+                form: '#form-1',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+                    Validator.isEmail('#email'),
+                    Validator.minLength('#password', 6),
+                    Validator.isRequired('#password_confirmation'),
+                    Validator.isConfirmed('#password_confirmation', function () {
+                        return document.querySelector('#form-1 #password').value;
+                    }, 'Mật khẩu nhập lại không chính xác')
+                ],
+                onSubmit: function (data) {
+                    // Call API
+                    console.log(data);
+                }
+            });
+
+
+            Validator({
+                form: '#form-2',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isEmail('#email'),
+                    Validator.minLength('#password', 6),
+                ],
+                onSubmit: function (data) {
+                    // Call API
+                    console.log(data);
+                }
+            });
+        });
+
+    </script>
+
+    <!--------- Hiệu ứng hoa rơi  ------->
+    <script type='text/javascript'>
+        //<![CDATA[
+        var pictureSrc = "https://1.bp.blogspot.com/-CXx9jt2JMRk/Vq-Lh5fm88I/AAAAAAAASwo/XivooDn_oSY/s1600/hoamai.png"; //the location of the snowflakes
+        var pictureWidth = 15; //the width of the snowflakes
+        var pictureHeight = 15; //the height of the snowflakes
+        var numFlakes = 10; //the number of snowflakes
+        var downSpeed = 0.01; //the falling speed of snowflakes (portion of screen per 100 ms)
+        var lrFlakes = 10; //the speed that the snowflakes should swing from side to side
+        if (typeof (numFlakes) != 'number' || Math.round(numFlakes) != numFlakes || numFlakes < 1) { numFlakes = 10; }
+
+        //draw the snowflakes
+        for (var x = 0; x < numFlakes; x++) {
+            if (document.layers) { //releave NS4 bug
+                document.write('<layer id="snFlkDiv' + x + '"><imgsrc="' + pictureSrc + '" height="' + pictureHeight + '"width="' + pictureWidth + '" alt="*" border="0"></layer>');
+            } else {
+                document.write('<div style="position:absolute; z-index:9999;"id="snFlkDiv' + x + '"><img src="' + pictureSrc + '"height="' + pictureHeight + '" width="' + pictureWidth + '" alt="*"border="0"></div>');
+            }
+        }
+        //calculate initial positions (in portions of browser window size)
+        var xcoords = new Array(), ycoords = new Array(), snFlkTemp;
+        for (var x = 0; x < numFlakes; x++) {
+            xcoords[x] = (x + 1) / (numFlakes + 1);
+            do {
+                snFlkTemp = Math.round((numFlakes - 1) * Math.random());
+            } while (typeof (ycoords[snFlkTemp]) == 'number');
+            ycoords[snFlkTemp] = x / numFlakes;
+        }
+        //now animate
+        function flakeFall() {
+            if (!getRefToDivNest('snFlkDiv0')) { return; }
+            var scrWidth = 0, scrHeight = 0, scrollHeight = 0, scrollWidth = 0;
+            //find screen settings for all variations. doing this every time allows for resizing and scrolling
+            if (typeof (window.innerWidth) == 'number') { scrWidth = window.innerWidth; scrHeight = window.innerHeight; } else {
+                if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+                    scrWidth = document.documentElement.clientWidth; scrHeight = document.documentElement.clientHeight;
+                } else {
+                    if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+                        scrWidth = document.body.clientWidth; scrHeight = document.body.clientHeight;
+                    }
+                }
+            }
+            if (typeof (window.pageYOffset) == 'number') { scrollHeight = pageYOffset; scrollWidth = pageXOffset; } else {
+                if (document.body && (document.body.scrollLeft || document.body.scrollTop)) { scrollHeight = document.body.scrollTop; scrollWidth = document.body.scrollLeft; } else {
+                    if (document.documentElement && (document.documentElement.scrollLeft || document.documentElement.scrollTop)) { scrollHeight = document.documentElement.scrollTop; scrollWidth = document.documentElement.scrollLeft; }
+                }
+            }
+            //move the snowflakes to their new position
+            for (var x = 0; x < numFlakes; x++) {
+                if (ycoords[x] * scrHeight > scrHeight - pictureHeight) { ycoords[x] = 0; }
+                var divRef = getRefToDivNest('snFlkDiv' + x); if (!divRef) { return; }
+                if (divRef.style) { divRef = divRef.style; } var oPix = document.childNodes ? 'px' : 0;
+                divRef.top = (Math.round(ycoords[x] * scrHeight) + scrollHeight) + oPix;
+                divRef.left = (Math.round(((xcoords[x] * scrWidth) - (pictureWidth / 2)) + ((scrWidth / ((numFlakes + 1) * 4)) * (Math.sin(lrFlakes * ycoords[x]) - Math.sin(3 * lrFlakes * ycoords[x])))) + scrollWidth) + oPix;
+                ycoords[x] += downSpeed;
+            }
+        }
+        //DHTML handlers
+        function getRefToDivNest(divName) {
+            if (document.layers) { return document.layers[divName]; } //NS4
+            if (document[divName]) { return document[divName]; } //NS4 also
+            if (document.getElementById) { return document.getElementById(divName); } //DOM (IE5+, NS6+, Mozilla0.9+, Opera)
+            if (document.all) { return document.all[divName]; } //Proprietary DOM - IE4
+            return false;
+        }
+        window.setInterval('flakeFall();', 100);
+    //]]>
+    </script>
+
+</body>
